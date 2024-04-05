@@ -1,0 +1,8 @@
+<macro name="Wake" icon="PLAY">
+   <assert-service description="Ensure 00001523-1212-efde-1523-785feabcd124 service" uuid="00001523-1212-efde-1523-785feabcd124">
+      <assert-characteristic description="Ensure 00001525-1212-efde-1523-785feabcd124 characteristic" uuid="00001525-1212-efde-1523-785feabcd124">
+         <property name="WRITE" requirement="MANDATORY"/>
+      </assert-characteristic>
+   </assert-service>
+   <write description="Write 0x01 to 00001525-1212-efde-1523-785feabcd124" characteristic-uuid="00001525-1212-efde-1523-785feabcd124" service-uuid="00001523-1212-efde-1523-785feabcd124" value="01" type="WRITE_REQUEST"/>
+</macro>
